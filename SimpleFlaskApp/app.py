@@ -9,7 +9,7 @@ cors = CORS(app)
 
 @app.route("/")
 def hello():
-    return "Hello, World!"
+    return "Hello, World!!"
 
 
 @app.route("/contact")
