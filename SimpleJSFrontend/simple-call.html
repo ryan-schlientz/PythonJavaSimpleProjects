@@ -14,7 +14,7 @@
 
     async function fetchCall() {
 
-        const url = "ec2-3-94-107-108.compute-1.amazonaws.com:7000/hello"
+        const url = "http://ec2-3-94-107-108.compute-1.amazonaws.com:7000/hello"
 
         const httpResponse = await fetch(url)
         const body = await httpResponse.text()
