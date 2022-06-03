@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Fetch Call</title>
+</head>
+
+<body>
+
+    <button onclick="fetchCall()">Make Fetch Call</button>
+
+</body>
+<script>
+
+    async function fetchCall() {
+
+        const url = "http://ec2-3-80-105-211.compute-1.amazonaws.com:7000/hello"
+
+        const httpResponse = await fetch(url)
+        const body = await httpResponse.text()
+
+        console.log(body)
+
+    }
+
+</script>
+
+</html>
